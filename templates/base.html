@@ -14,7 +14,7 @@
 
     {% block corecss%}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -35,10 +35,10 @@
   </head>
   <body>
     <header class="contianer-fluid fixed-top">
-      <div class="row">
+      <div id="top-nav" class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-2 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link logo-link">
-              <h2 class="logo-font text-black my-0">Ear-resistable</h2>
+              <h2 class="logo-font text-black my-0"><em><strong>Ear</strong></em>-resistable</h2>
             </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-2 py-lg-0">
@@ -48,7 +48,7 @@
                 <div class="input-group-append">
                   <button class="form-control btn btn-blue brder border-black rounded-0" type="submit">
                     <span class="icon">
-                      <i></i>
+                      <i class="fas fa-search"></i>
                     </span>
                   </button>
                 </div>
@@ -60,7 +60,7 @@
               <li class="list-inline-item dropdown">
                 <a href="#" class="text-black nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center">
-                    <div><i></i></div>
+                    <div><i class="far fa-user"></i></div>
                     <p class="my-0">My Account</p>
                   </div>
                 </a>
@@ -80,7 +80,7 @@
               <li class="list-inline-item">
                   <a href="" class="{% if grand_total %} text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
                     <div class="text-center">
-                      <div><i></i></div>
+                      <div><i class="fas fa-cart-plus"></i></div>
                       <p class="my-0">
                         {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
