@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/earring-home-background.jpg') no-repeat center center fixed;
+    background: url('/media/earring-home-background.jpg') no-repeat top center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: red;
+    color: black;
     font-family: 'Raleway';
 }
 
@@ -22,37 +22,55 @@ body {
     text-transform: uppercase;
 }
 
+.logo-styling {
+    color: #FA0657;
+    font-family: 'WindSong';
+    text-transform: capitalize;
+}
+
 .logo-link {
     width: fit-content;
 }
 
 .shop-now-btn {
-    background: black;
-    color: grey;
+    background: #FFFF63;
+    color: #000;
     min-width: 2 rem;
 }
 
-.btn-blue {
-    background: blue;
-    color: grey;
+.search-btn {
+    background: #FA0657;
+    color: #000;
 }
 
 .shop-now-btn:hover,
 .shop-now-btn:active,
 .shop-now-btn:focus {
-    background: grey;
-    color: black;
+    color: #FFFF63;
+    background: #000;
 }
 
-.btn-blue:hover,
-.btn-blue:active,
-.btn-blue:focus {
-    background: grey;
-    color: blue;
+.search-btn:hover,
+.search-btn:active,
+.search-btn:focus {
+    background: #000;
+    color: #FA0657;
 }
 
 .text-black {
-    color: black !important;
+    color: #000 !important;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg-nav {
+    background: #FFFF63;
+}
+
+.lower-bg-nav {
+    background: #FA0657;
 }
 
 /* ----------------------- Media Queries */
