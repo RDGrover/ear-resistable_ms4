@@ -22,9 +22,9 @@
 
 ### 1.4 Colour Scheme
 
-Logo/Lower Navbar/Search Button - #FA0657
-Top Navbar/Shop Now Button - #FFFF63
-Main body text/Free delivery background - #000
-Free delivery text - #FFF
+* Logo/Lower Navbar/Search Button - #FA0657
+* Top Navbar/Shop Now Button - #FFFF63
+* Main body text/Free delivery background - #000
+* Free delivery text - #FFF
 
 ## User Stories
