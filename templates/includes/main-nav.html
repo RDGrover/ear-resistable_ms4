@@ -13,24 +13,12 @@
         </li>
         <li class="navbar-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="single-piece-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Single Piece Earrings
+                Classic Earrings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="single-piece-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">All Single Piece Earrings</a>
-            </div>
-        </li>
-        <li class="navbar-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="multi-piece-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Multi-Piece Earrings
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="multi-piece-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">All Multi-Piece Earrings</a>
+                <a href="{% url 'products' %}?category=single_piece_earrings" class="dropdown-item">Single Piece Earrings</a>
+                <a href="{% url 'products' %}?category=multi_piece_earrings" class="dropdown-item">Multi-Piece Earrings</a>
+                <a href="{% url 'products' %}?category=single_piece_earrings,multi_piece_earrings" class="dropdown-item">All Earrings</a>
             </div>
         </li>
         <li class="navbar-item dropdown">
@@ -38,10 +26,10 @@
                 Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="offers-link">
-                <a href="" class="dropdown-item">Summer Collection</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Offers</a>
+                <a href="{% url 'products' %}?category=summer_collection" class="dropdown-item">Summer Collection</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=summer_collection,deals,clearance" class="dropdown-item">All Offers</a>
             </div>
         </li>
     </ul>
