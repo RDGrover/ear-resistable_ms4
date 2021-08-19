@@ -73,6 +73,23 @@ body {
     background: #FA0657;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fdfd96;
+    position: fixed;
+    z-index: -1;
+}
+
+.hr-styling {
+    color: #FA0657;
+}
+
+.icon-styling {
+    color: #ffff00;
+}
 /* ----------------------- Media Queries */
 
 @media (min-width: 1200px) {
@@ -91,5 +108,15 @@ body {
     }
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
