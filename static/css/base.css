@@ -90,6 +90,11 @@ body {
 .icon-styling {
     color: #ffff00;
 }
+
+.product-styling {
+    font-family: 'Lobster';
+    color: #FA0657;
+}
 /* ----------------------- Media Queries */
 
 @media (min-width: 1200px) {
