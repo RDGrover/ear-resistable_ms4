@@ -106,6 +106,17 @@ a.category-badge > span.badge:hover {
     color: #FA0657;
 }
 
+.back-to-btn {
+    height: 3em;
+    width: 3em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.back-to-link {
+    cursor: pointer;
+}
 /* ----------------------- Media Queries */
 
 @media (min-width: 1200px) {
