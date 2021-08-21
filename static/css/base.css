@@ -118,7 +118,9 @@ a.category-badge > span.badge:hover {
     right: 1em;
 }
 
-.back-to-link {
+.back-to-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 /* ----------------------- Media Queries */
