@@ -32,33 +32,37 @@ body {
     width: fit-content;
 }
 
-.shop-now-btn {
+.btn-yellow {
     background: #FFFF63;
     color: #000;
     min-width: 2 rem;
 }
 
-.search-btn {
+.btn-pink {
     background: #FA0657;
     color: #000;
 }
 
-.shop-now-btn:hover,
-.shop-now-btn:active,
-.shop-now-btn:focus {
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus {
     color: #FFFF63;
     background: #000;
 }
 
-.search-btn:hover,
-.search-btn:active,
-.search-btn:focus {
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus {
     background: #000;
     color: #FA0657;
 }
 
 .text-black {
     color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid #000 !important;
 }
 
 .bg-black {
