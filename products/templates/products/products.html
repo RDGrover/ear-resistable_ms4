@@ -64,7 +64,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0 fs-4 product-styling"> {{ product.name }}</p>
+                                    <a class="mb-0 fs-4 product-styling text-decoration-none" href="{% url 'product_detail' product.id %}"> {{ product.name }}</a>
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
