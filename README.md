@@ -28,3 +28,27 @@
 * Free delivery text - #FFF
 
 ## User Stories
+* As a user I would like to be able to view all products without needing to sign up for an account.
+* As a user I would like to be able to access all products from the home page.
+* As a user I would like to be able to access all products from any other page on the website.
+* As a user I would like to be able to search for specific products if there is a particular product I am looking for.
+* As a user I would like to be able to navigate back to the home page from anywhere on the sight by clicking the logo.
+* As a user I would like to be able to access individual categories.
+* As a user I would like to be able to access multiple categories at once.
+* As a user I would like to be able to access all categories at once.
+* As a user I would like to be able to select a product and view additional details and be able to purchase that product.
+* As a user I would like to see what products are currently in my shopping bag after adding a new one.
+
+## Features
+
+### 2.1 Navigation Bar
+
+### 2.2 Search Bar
+
+### 2.3 Category Selection
+
+### 2.4 Product Details
+
+### 2.5 Adding Products to Shopping Bag
+
+### 2.6 Shopping Bag
