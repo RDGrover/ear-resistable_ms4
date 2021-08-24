@@ -52,3 +52,17 @@
 ### 2.5 Adding Products to Shopping Bag
 
 ### 2.6 Shopping Bag
+
+## Technology Used
+* HTML5 - The project uses HTML templates throughout.
+* CSS3 - The project uses CSS for styling HTML elements.
+* JavaScript - The project uses JavaScript for responsive elements mostly in the navbar.
+* Python - The project uses Python to run the application.
+* Django - The project uses Django as a framework to build apps for project.
+* Google Fonts - The project uses Google Fonts to improve the text of the project.
+* Font Awesome - The project uses Font Awesome to illustrate particular functions througout the project.
+* Bootstrap - The project uses Bootstrap as a framework for layout, styling and responsive elements.
+* Stripe - The project uses Stripe as a payment management system. 
+* GitHub - The project uses a GitHub reposistory to store the project and for version control.
+* GitPod - The project uses GitPod as a terminal to build the website.
+* Git - The project uses Git to save the project and push the project into the GitHub repository. 
