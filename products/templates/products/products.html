@@ -70,6 +70,9 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead text-left font-weight-bold fs-2">£{{ product.price }}</p>
+                                            <p>
+                                                <a href="{% url 'product_detail' product.id %}" class="btn-yellow btn-lg text-decoration-none">More Info <i class="fas fa-info-circle"></i></a>
+                                            </p>
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star icon-styling"></i>{{ product.rating }}</small>
                                             {% else %}
