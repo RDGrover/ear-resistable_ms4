@@ -27,65 +27,161 @@
 
         <div class="row">
             <div class="col-12 col-lg-7">
-                <div class="order-confirmation-wrapper border">
+                <div class="order-confirmation-wrapper border-black">
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Info:</small>
+                            <p class="product-styling mx-1">Order Info:</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p><strong>Order Number:</strong></p>
+                            <p class="mx-3"><strong>Order Number:</strong></p>
                         </div>
-                        <div class="col-12 col-md-4 text-end">
-                            <p>{{ order.order_number }}</p>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.order_number }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p><strong>Order Date:</strong></p>
+                            <p class="mx-3"><strong>Order Date:</strong></p>
                         </div>
-                        <div class="col-12 col-md-4 text-end">
-                            <p>{{ order.order_date }}</p>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.date }}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Details:</small>
+                            <p class="product-styling mx-1">Order Details:</p>
+                        </div>
+                    </div>
+
+                    {% for item in order.lineitems.all %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>{{ item.product.name }}</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ item.quantity }} @ £{{ item.product.price }} each</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="product-styling mx-1">Delivering To:</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p><strong>Order Number:</strong></p>
+                            <p class="mx-3"><strong>Full Name</strong></p>
                         </div>
-                        <div class="col-12 col-md-4 text-end">
-                            <p>{{ order.order_number }}</p>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.full_name }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Address 1</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.street_address1 }}</p>
+                        </div>
+                    </div>
+
+                    {% if order.street_address2 %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Address 2</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.street_address2 }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if order.county %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>County</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.county }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Town or City</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.town_or_city }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Postcode</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.postcode }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Phone Number</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.phone_number }}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Delivering To:</small>
+                            <p class="product-styling mx-1">Billing Info:</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Order Total</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.order_total }}</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <small class="text-muted">Billing Info:</small>
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Delivery</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.delivery_cost }}</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mx-3"><strong>Grand Total</strong></p>
+                        </div>
+                        <div class="col-12 col-md-8 text-end">
+                            <p class="mx-2">{{ order.grand_total }}</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-7 text-end">
+            <div class="col-12 col-lg-7 text-end mt-3">
                 <a href="{% url 'products' %}?category=summer_collection,deals,clearance" class="btn btn-pink rounded-0 my-0">
                     <span class="icon">
                         <i class="fas fa-shopping-basket"></i>
                     </span>
-                    <span class="text-uppercase">Check out our newest collection and best deals!</span>
+                    <span class="text-uppercase">Check out our new summer collection!</span>
                 </a>
             </div>
         </div>
