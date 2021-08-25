@@ -158,6 +158,10 @@ a.category-badge > span.badge:hover {
     color: #FFFF63;
 }
 
+.home-icon-styling{
+    color: #fdd802;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0;
