@@ -20,13 +20,6 @@
 * A user would want to be able to login to their account and logout when they are finished.
 * A user would want their cart to be updated as they add products so what they are purchasing is visible and the price is updated.
 
-### 1.4 Colour Scheme
-
-* Logo/Lower Navbar/Search Button - #FA0657
-* Top Navbar/Shop Now Button - #FFFF63
-* Main body text/Free delivery background - #000
-* Free delivery text - #FFF
-
 ## User Stories
 * As a user I would like to be able to view all products without needing to sign up for an account.
 * As a user I would like to be able to access all products from the home page.
