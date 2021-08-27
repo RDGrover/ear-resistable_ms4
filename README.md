@@ -36,11 +36,28 @@
 
 ### 2.1 Navigation Bar
 
+* The Navbar is consistent across ever page of the site with the same colour scheme and the same functionality. 
+* The logo in the top corner will always link back to the home page, allowing the user easily navigate back to the home page.
+* The Navbar contains a search bar which will allow the user to search for keywords which appear in product name or description. 
+* Underneath the search bar there are dropdown boxes which act as category selectors and will filter products based on the selected attributes.
+* The My Profile button allows the to access their own profile and view their previous orders as well as set a default address for the user.
+* The cart symbol in the corner has an adaptive number underneath it which updates to show an accurate value to the users selected products, including product price and delivery cost. The cart will also change from a muted grey to black when any products have been added increasing the base value above 0.00. 
+
 ### 2.2 Search Bar
+
+* The search bar is a simple search function which is easy to navigate for the user.
+* Entering a search term will display the products whose description or name contain the search term.
+* This will filter all products regardless of category, so long as they contain the search term within their description or name.
 
 ### 2.3 Category Selection
 
+* The user will also be able to use the category selection beneath the search bar.
+* These categories will narrow down the products into one or multiple categories which are grouped together. In 'Classic Earrings' there are two subcategories of 'Single-Piece Earrings' and 'Multi-Piece Earrings' which can be displayed individually or together by selecting 'All Earrings'. In 'Offers' there are three subcategories of 'Summer Collection', 'Deals' and 'Clearance' which can be displayed individually or together by selecting 'All Offers'. Within 'All Items' all products will be displayed within a secondary filter which can be applied from the dropdown box including: 'By Price High-Low', 'By Price Low-High' and 'By Rating'. All of these filters can be applied to any products pages using another dropdown box present at the top of each product page.
+
 ### 2.4 Product Details
+
+* Each product will link to its own product details page. The user is able to arrive at the product details page in one of three ways, by either selecting the product image, the product name or by clicking the more info button.
+* The user will be able to see the product image as well as more information about each product. The user is also given the option to add the product to their bag and select the quantity they would like to add. 
 
 ### 2.5 Adding Products to Shopping Bag
 
