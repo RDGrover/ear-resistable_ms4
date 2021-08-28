@@ -177,12 +177,21 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-7 text-end mt-3">
-                <a href="{% url 'products' %}?category=summer_collection,deals,clearance" class="btn btn-pink rounded-0 my-0">
-                    <span class="icon">
-                        <i class="fas fa-shopping-basket"></i>
-                    </span>
-                    <span class="text-uppercase">Check out our new summer collection!</span>
-                </a>
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn btn-pink rounded-0 my-0">
+                        <span class="icon">
+                            <i class="far fa-user"></i>
+                        </span>
+                        <span class="text-uppercase">Return to My Profile</span>
+                    </a>
+                {% else %}
+                    <a href="{% url 'products' %}?category=summer_collection,deals,clearance" class="btn btn-pink rounded-0 my-0">
+                        <span class="icon">
+                            <i class="fas fa-shopping-basket"></i>
+                        </span>
+                        <span class="text-uppercase">Check out our new summer collection!</span>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
