@@ -89,6 +89,7 @@ class StripeWH_Handler:
                 content=f'Webhook received: {event["type"]} | Success: Verified order already in database',
                 status=200)
         else:
+            order = None
             try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
@@ -104,14 +105,14 @@ class StripeWH_Handler:
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
-                        product = Product.objects.get(id=item_id)
-                        if isinstance(item_data, int):
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=item_data,
-                            )
-                            order_line_item.save()
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                        order_line_item.save()
             except Exception as e:
                 if order:
                     order.delete()
