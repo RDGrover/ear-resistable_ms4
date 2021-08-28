@@ -233,7 +233,8 @@ a.category-badge > span.badge:hover {
     border-color: #FA0657;
 }
 
-#add-product-form > .form-group {
+#add-product-form > .form-group,
+#edit-product-form > .form-group {
     margin-bottom: 1rem;
 }
 
