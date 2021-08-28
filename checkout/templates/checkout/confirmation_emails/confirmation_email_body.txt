@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}
+
+This email is a confiramtion of your recent order from Ear-resistible. 
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.order_date }}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+The order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city}} within 3-5 business days.
+
+If you have any questions please don't hesistate to get in contact with us {{ contact_email }}.
+
+Thank you for supporting our small business.
+
+Best Wishes,
+
+Ear-resistible Team
