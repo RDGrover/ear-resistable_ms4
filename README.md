@@ -61,7 +61,21 @@
 
 ### 2.5 Adding Products to Shopping Bag
 
+* The user can access product details by selecting either, the product image, the product name or the more info button. From the product details page each item can be added to the user's bag.
+* The user has the option to select the desired quantity using the provided + and - buttons, or by typing in their own number provided it falls between 1 and 99. 
+* The user can then add the product to their bag to be checked out.
+
 ### 2.6 Shopping Bag
+
+* The bag has responsive pricing so that when a new item is added to the bag the amount displayed underneath it is changed to the grand total, which is the delivery and order total added together. 
+* When a new item is added to the bag a small window is displayed showing the user the current contents of the bag. 
+* Selecting the bag button will show the user all the items with the bag and their quantities as well as displaying each products individual prices and their total at the bottom of the page, including the delivery cost if one applies. The user will also be shown the button which will take them to the secure checkoutpage to allow them to purchase the products.
+
+### 2.7 Profile Page
+
+* The user will be able to see the My Account button from all pages in the navbar. Selecting the button will give an unauthenticated user the option to either login or signup for an account. Clicking on either will bring the user to one of the forms which will prompt them for username and password if logging in, or username, email and password for signing up.
+* For an authenticated user the my account page will display a profile which contains the users default fields including phone number and address. The profile page will also show the user's order history if they have already ordered products.
+* If the user is a superuser then an additional option of product management will appear, allowing the user admin capabilites to manage products.
 
 ## Technology Used
 * HTML5 - The project uses HTML templates throughout.
