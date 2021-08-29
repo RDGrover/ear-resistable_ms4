@@ -4,7 +4,12 @@
 
 ### 1.1 Overview
 
-* When beginning the project I knew I wanted to create an e-commerce website to showcase the earrings my partner has been making over lockdown. I like the idea of showcasing her products, but since she does not want to make her own website I wanted to use this project to display her work. I wanted to create a simple e-commerce website inspired by small businesses with a simple but bright colour scheme and minimalistic style. I wanted the website not to overshadow the products.
+* When beginning the project I knew I wanted to create an e-commerce website to showcase the earrings my partner has been making over lockdown. I like the idea of showcasing her products, but since she does not want to make her own website I wanted to use this project to display her work. I wanted to create a simple e-commerce website inspired by small businesses with a simple but bright colour scheme and minimalistic style. I wanted the website not to overshadow the products. The store is divided into several categories which each contain multiple products, they are:
+    * Single-Piece Earrings
+    * Multi-Piece Earrings
+    * Deals 
+    * Clearance 
+    * Summer Collection
 
 ### 1.2 Project Goals
 
