@@ -8,5 +8,8 @@ def blog_list(request):
 
     return render(request, 'blog/blog.html', {"posts": posts})
 
-# def blog_detail():
 
+def blog_detail(request):
+    model = Post
+
+    return render(request, 'blog/blog_detail.html', {"model": model})

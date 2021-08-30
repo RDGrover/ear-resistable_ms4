@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h3 class="logo-font fs-1 product-styling">Blog</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-1">
+                {% for posts in blog_list %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ blogpost.title }}</h3>
+                        <p class="card-text text-muted h7">{{ blogpost.user }} | {{ blogpost.created_on }} | {{ blogpost.updated_on }}</p>
+                        <p class="card-text">{{ blogpost.body_text|slice:":100"}}</p>
+                        <a href="{% url 'blog_detail %}" class="btn btn-yellow">Read More</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-btn rounded-0">
+        <a class="back-to-link d-flex h-100">
+            <i class="fas fa-angle-double-up text-black mx-auto my-auto fs-3"></i>
+        </a>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.back-to-link').click(function(e) {
+            window.scrollTo(0,0)
+        })
+    </script>
+{% endblock %}

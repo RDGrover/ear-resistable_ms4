@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+# STATUS = (
+#     (0, "Draft"),
+#     (1, "Publish")
+# )
 
 class BlogPost(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -10,6 +14,12 @@ class BlogPost(models.Model):
     body_text = models.TextField(default=None, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, blank=True)
+
+    class Meta:
+        ordering = ['-updated_at']
+
+    def __str__(self):
+        return self.title
 
 
 class Comments(models.Model):
