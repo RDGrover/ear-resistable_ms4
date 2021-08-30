@@ -4,12 +4,20 @@ from .models import BlogPost
 
 
 def blog_list(request):
-    posts = BlogPost.objects.all().order_by('-created_at')
+    posts = BlogPost.objects.all()
 
-    return render(request, 'blog/blog.html', {"posts": posts})
+    context = {
+        "posts": posts,
+    }
+
+    return render(request, 'blog/blog.html', context)
 
 
 def blog_detail(request):
     model = BlogPost
 
-    return render(request, 'blog/blog_detail.html', {"model": model})
+    context = {
+        "model": model,
+    }
+
+    return render(request, 'blog/blog_detail.html', context)
