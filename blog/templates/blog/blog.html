@@ -26,10 +26,10 @@
                 {% for posts in blog_list %}
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h3 class="card-title">{{ blogpost.title }}</h3>
-                        <p class="card-text text-muted h7">{{ blogpost.user }} | {{ blogpost.created_on }} | {{ blogpost.updated_on }}</p>
-                        <p class="card-text">{{ blogpost.body_text|slice:":100"}}</p>
-                        <a href="{% url 'blog_detail %}" class="btn btn-yellow">Read More</a>
+                        <h3 class="card-title">{{ post.title }}</h3>
+                        <p class="card-text text-muted h7">{{ post.user }} | {{ post.created_on }} | {{ post.updated_on }}</p>
+                        <p class="card-text">{{ post.body_text|slice:":100"}}</p>
+                        <a href="{% url 'blog_detail' %}" class="btn btn-yellow">Read More</a>
                     </div>
                 </div>
                 {% endfor %}

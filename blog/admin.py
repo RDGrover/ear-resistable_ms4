@@ -11,6 +11,7 @@ class BlogPostAdmin(admin.ModelAdmin):
         'updated_at',
     )
 
-    ordering = ('updated_at',)
+    ordering = ('created_at',)
+
 
 admin.site.register(BlogPost, BlogPostAdmin)
