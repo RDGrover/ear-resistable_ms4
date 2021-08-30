@@ -23,13 +23,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-1">
-                {% for posts in blog_list %}
+                {% for post in posts %}
                 <div class="card mb-3">
-                    <div class="card-body">
-                        <h3 class="card-title">{{ posts.title }}</h3>
-                        <p class="card-text text-muted h7">{{ posts.user }} | {{ posts.created_on }} | {{ posts.updated_on }}</p>
-                        <p class="card-text">{{ posts.body_text|slice:":100"}}</p>
-                        <a href="{% url 'blog_detail' %}" class="btn btn-yellow">Read More</a>
+                    <div class="card-body text-center">
+                        <h3 class="card-title product-styling">{{ post.title }}</h3>
+                        <p class="card-text text-muted h7">{{ post.user }} | {{ post.created_at }} | {{ post.updated_at }}</p>
+                        <p class="card-text">{{ post.body_text|slice:":100"}}</p>
+                        <a href="{% url 'blog_detail' post.id %}" class="btn btn-yellow">Read More</a>
                     </div>
                 </div>
                 {% endfor %}

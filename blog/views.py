@@ -4,16 +4,16 @@ from .models import BlogPost
 
 
 def blog_list(request):
-    posts = BlogPost.objects.all()
+    posts = list(BlogPost.objects.all())
 
     context = {
         "posts": posts,
     }
-
+    print(blog_list)
     return render(request, 'blog/blog.html', context)
 
 
-def blog_detail(request):
+def blog_detail(request, post_id):
     model = BlogPost
 
     context = {

@@ -23,3 +23,9 @@ class Comments(models.Model):
     post = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     comment = models.TextField(default=None, blank=True, null=True)
+
+    class Meta:
+        ordering = ['created_at']
+
+    def __str__(self):
+        return 'This comment {} posted by {}'.format(self.comment, self.user)
