@@ -10,6 +10,14 @@
     * Deals 
     * Clearance 
     * Summer Collection
+* Each product has seven fields which help to make each product unique, they are:
+    * Category
+    * Name 
+    * Sku
+    * Description
+    * Price
+    * Rating 
+    * Image
 
 ### 1.2 Project Goals
 
@@ -36,6 +44,17 @@
 * As a user I would like to be able to access all categories at once.
 * As a user I would like to be able to select a product and view additional details and be able to purchase that product.
 * As a user I would like to see what products are currently in my shopping bag after adding a new one.
+* As a user I would like to be able to change the quantity of items within the bag, including removing the objects from the bag.
+* As a user I would like to be able to create an account.
+* As a user I would like to be able to sign-in to an existing account.
+* As a user I would like to be able to view my order history if I have already placed an order.
+* As a user I would like to have my personal information regarding shipping and billing saved if logged in.
+* As a user I would like to receive a confirmation email after placing an order.
+* As a user I would like to see an order summary form after completing my order.
+
+* As a website owner I would like to be able to add new products.
+* As a website owner I would like to be able to edit existing products.
+* As a website owner I would like to be able to delete existing products.
 
 ## Features
 
@@ -86,6 +105,7 @@
 * HTML5 - The project uses HTML templates throughout.
 * CSS3 - The project uses CSS for styling HTML elements.
 * JavaScript - The project uses JavaScript for responsive elements mostly in the navbar.
+* jQuery - The project uses jQuery to configure interactive JavaScript features.
 * Python - The project uses Python to run the application.
 * Django - The project uses Django as a framework to build apps for project.
 * Google Fonts - The project uses Google Fonts to improve the text of the project.
@@ -94,4 +114,15 @@
 * Stripe - The project uses Stripe as a payment management system. 
 * GitHub - The project uses a GitHub reposistory to store the project and for version control.
 * GitPod - The project uses GitPod as a terminal to build the website.
-* Git - The project uses Git to save the project and push the project into the GitHub repository. 
+* Git - The project uses Git to save the project and push the project into the GitHub repository.
+* Heroku - The project was deployed using Heroku.
+* AWS - The project's static and media files were loaded onto the Heroku app using Amazon Web Services.
+
+
+## Apps
+* ear-resistable: the project level app.
+* bag: for users to place products.
+* checkout: to purchase the products (Stripe integrated).
+* home: acts as a landing page and anchor point for easy site navigation.
+* products: for users to see the products and see a more detailed view of those products, for developers to add, edit or delete products.
+* profiles: stores user information and allows them to access order history.
