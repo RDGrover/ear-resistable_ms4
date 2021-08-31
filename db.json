@@ -947,11 +947,119 @@
         "change_message": ""
     }
 }, {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2021-08-30T17:05:07.878Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "First Blog Post",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2021-08-30T17:15:35.037Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "First Blog Post",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body text\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2021-08-31T00:42:44.619Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "1",
+        "object_repr": "This comment This is a test comment. posted by EGreed",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2021-08-31T01:25:26.382Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "First Purchase - I love it!",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2021-08-31T01:26:38.169Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "Becky232",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2021-08-31T01:27:14.945Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "Becky232",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2021-08-31T01:33:39.887Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "Summer is Here!",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2021-08-31T03:26:06.023Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "3",
+        "object_repr": "This comment So glad you like them! Always great to see a happy customer! posted by rdg995",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2021-08-31T03:31:40.160Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "First Blog Post",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}, {
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$260000$c9KbX6kwnysbcyOdm5P8RE$BCT+Q7vpal02ZA/d0l6he7aJNWbiGO8KXJ26Xur5sLA=",
-        "last_login": "2021-08-28T22:11:56.162Z",
+        "last_login": "2021-08-31T05:28:22.479Z",
         "is_superuser": true,
         "username": "rdg995",
         "first_name": "",
@@ -1015,6 +1123,23 @@
         "user_permissions": []
     }
 }, {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$RW2kd1XVqMlxfLKfQeJYfg$9xWGKkvAoJqbxnR8ZsBrJRknkd245iOIlCZOPix02rE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Becky232",
+        "first_name": "",
+        "last_name": "",
+        "email": "becky232@somemail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-08-31T01:26:38Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
     "model": "sessions.session",
     "pk": "1cebl0u9u8t6ck13e8mwqw54h0b5jaga",
     "fields": {
@@ -1041,6 +1166,13 @@
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe-yNbKStdeflPScwXL8IQZkoziRQIi7Q6Q0ad_MvA_YFlvLtdj4eub5DUN3AuvWZbJri7PNAQbo4bCNzt9j2UC4uXKtzNeyzHlkm8J22tilhvg47-7hYHJt-tcYBKrOB_QeI0WUXGBKXEqvdY9CSZ5IG-MVVyKRIeKJO01GjCERKQHfH-7MPhY:1mEKAr:06csXE-9pKsC5e3PZPHYO9Gez6h6TMti6iVIidMoOP4",
         "expire_date": "2021-08-26T23:31:45.499Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "k4eudf0mpjh77pdj84o2jdluqpotd2aw",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHTlmeX7v0GAsxgUQOmtInG-O_apAvd3nPueTHn12Vya6PZZWQj69jhdws-XqlsAC--nCuPtSxzDnxT-E4bP1Wk23F3_wKTb9P3Db0SHWqZBHiIKQUThOqMxMFSJK2TMmAVWhW16aVMFhEiWY02waBt3KKNWsu1OHrc8_xkI7w_gCU_DA:1mKwJq:xDVFNvx27dQUdX9KAVhyphsUhlwtQg1wr8WhqBgMLGA",
+        "expire_date": "2021-09-14T05:28:22.620Z"
     }
 }, {
     "model": "sessions.session",
@@ -1362,5 +1494,52 @@
         "rating": "4.6",
         "image_url": null,
         "image": "20210817_154830_Rej29Jj.jpg"
+    }
+},{
+    "model": "blog.blogpost",
+    "pk": 2,
+    "fields": {
+        "user": 3,
+        "title": "First Purchase - I love it!",
+        "body_text": "First time shopping here but I'll definitely be back for more. I bought Tropical Sunset and Green Turtle and I absolutely love them!! I've recommended Ear-resistable to all of my friends and family. Been getting great compliments on the earrings all day, couldn't be happier!",
+        "created_at": "2021-08-31T01:25:26.381Z",
+        "updated_at": "2021-08-31T01:25:26.381Z"
+    }
+}, {
+    "model": "blog.blogpost",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "title": "Summer is Here!",
+        "body_text": "Our new Summer Collection is here! It's time to ring in the summer season with our collection of summery earrings. Enjoy your summer the right way and dive into our brand new collection. On sale now!",
+        "created_at": "2021-08-31T01:33:39.886Z",
+        "updated_at": "2021-08-31T01:33:39.886Z"
+    }
+}, {
+    "model": "blog.comments",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "post": 2,
+        "created_at": "2021-08-31T03:24:30.110Z",
+        "comment": "So glad you like them! Always great to see a happy customer!"
+    }
+}, {
+    "model": "blog.comments",
+    "pk": 5,
+    "fields": {
+        "user": 3,
+        "post": 3,
+        "created_at": "2021-08-31T03:25:24.853Z",
+        "comment": "Can't wait to try these!!!!"
+    }
+}, {
+    "model": "blog.comments",
+    "pk": 6,
+    "fields": {
+        "user": 5,
+        "post": 3,
+        "created_at": "2021-08-31T03:33:20.656Z",
+        "comment": "I've been waiting for this since Christmas, I can't believe it's finally here"
     }
 }]
