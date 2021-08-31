@@ -51,6 +51,9 @@
 * As a user I would like to have my personal information regarding shipping and billing saved if logged in.
 * As a user I would like to receive a confirmation email after placing an order.
 * As a user I would like to see an order summary form after completing my order.
+* As a user I would like to see a blog featuring news from the site owners and reviews from other users.
+* As a user I would like to see other user's comments on those blog posts.
+* As a user I would like to be able to make comments on existing blog posts.
 
 * As a website owner I would like to be able to add new products.
 * As a website owner I would like to be able to edit existing products.
@@ -126,3 +129,17 @@
 * home: acts as a landing page and anchor point for easy site navigation.
 * products: for users to see the products and see a more detailed view of those products, for developers to add, edit or delete products.
 * profiles: stores user information and allows them to access order history.
+
+## Testing 
+
+Testing is documented in a seperate file - [testing.md](/testing.md)
+
+## Testing Device Screens
+
+I have tested the website on all the device screens available within the google chrome inspector. The website looks and functions well across all devices.
+
+
+## Known Bugs 
+* Toasts displaying bag contents is cut off on screens with a width of 320px.
+* If you enter a comment and leave the fields filled and reload the page the comment will be submitted again. 
+
