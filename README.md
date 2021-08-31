@@ -1,5 +1,7 @@
 # Ear-resistable_ms4
 
+[Live website link here](https://ear-resistable.herokuapp.com/)
+
 ## UX 
 
 ### 1.1 Overview
@@ -104,6 +106,8 @@
 * For an authenticated user the my account page will display a profile which contains the users default fields including phone number and address. The profile page will also show the user's order history if they have already ordered products.
 * If the user is a superuser then an additional option of product management will appear, allowing the user admin capabilites to manage products. This allows them to add, update or delete products from the store.
 
+## Wireframes
+
 ## Technology Used
 * HTML5 - The project uses HTML templates throughout.
 * CSS3 - The project uses CSS for styling HTML elements.
@@ -142,4 +146,38 @@ I have tested the website on all the device screens available within the google 
 ## Known Bugs 
 * Toasts displaying bag contents is cut off on screens with a width of 320px.
 * If you enter a comment and leave the fields filled and reload the page the comment will be submitted again. 
+
+## Deployment 
+
+This project was coded using Git and GitPod, the following steps were made to save code and add it to GitHub repository:
+ 1. Use git add to move code from the workspace to staging area.
+ 1. Use git commit to save files to a local repository with a message to say what has been changed since previous commit.
+ 1. Use git push to move the files from a local repository to a remote repository like GitHub.
+
+To deploy this page to Heroku from its [GitHub repository](https://github.com/RDGrover/ear-resistable_ms4), the following steps were taken:
+ 1. Go to the **Heroku Dashboard** and create a **New App** with the region set to **Europe**.
+ 1. In the **Settings** tab of your app click **Reveal Config Vars**.
+ 1. Enter the required environment variables, **IP**, **PORT** and **MONGO_URI**.
+ 1. In your IDE of choice create a **env.py** containing the **MONGO_URI** and add it to the **.gitignore**.
+ 1. In your IDE of choice create a **requirements.txt** by using the command **pip freeze -local > requirements.txt**.
+ 1. In your IDE of choice create a **Profile** by using the command **echo web: python app.py > Procfile**.
+ 1. Go to the **Deploy** tab and select **Heroku Git**.
+ 1. In your IDE of choice use the command **git push heroku main**.
+
+Note: The [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) will need to have been downloaded and installed to push from command line.
+
+To deploy locally use the following steps:
+ 1. Go to [GitHub repository](https://github.com/RDGrover/ear-resistable_ms4)
+ 1. Click the **Clone** or **Download** button and copy the URL into the address box https://github.com/RDGrover/ear-resistable_ms4.git
+ 1. Open your terminal and cd to the path where you want to run the clone of the repository.
+ 1. Type into the terminal git clone https://github.com/RDGrover/ear-resistable_ms4.git.
+ 1. Once the repository has been downloaded to the designated folder, you can run the files through the browser to check if it is working.
+
+## Code
+
+* Code for the blog and comments apps were based on the apps posted on [django central](https://djangocentral.com)
+
+## Media
+
+* Background image on the home page sourced from [Pexels](https://www.pexels.com/photo/woman-in-pink-dress-holding-brown-bag-standing-1416377/)
 
