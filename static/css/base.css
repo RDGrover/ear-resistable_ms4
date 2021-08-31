@@ -253,6 +253,9 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.comment-styling {
+    background-color: #ffecec;
+}
 
 /* ----------------------- Media Queries */
 

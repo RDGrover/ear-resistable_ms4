@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import BlogPost
+from .models import BlogPost, Comments
 from .forms import CommentsForm
 
 
@@ -18,6 +18,8 @@ def blog_detail(request, post_id):
     post = get_object_or_404(BlogPost, id=post_id)
     new_comment = None
 
+    comments = Comments.objects.filter(post=post)
+
     if request.method == 'POST':
         comments_form = CommentsForm(data=request.POST)
         if comments_form.is_valid():
@@ -30,6 +32,7 @@ def blog_detail(request, post_id):
     context = {
         "model": model,
         "post": post,
+        "comments": comments,
         "new_comment": new_comment,
         "comments_form": comments_form,
     }
