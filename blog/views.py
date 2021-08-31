@@ -15,7 +15,7 @@ def blog_list(request):
 
 def blog_detail(request, post_id):
     model = BlogPost
-    post = get_object_or_404(BlogPost)
+    post = get_object_or_404(BlogPost, id=post_id)
     new_comment = None
 
     if request.method == 'POST':
