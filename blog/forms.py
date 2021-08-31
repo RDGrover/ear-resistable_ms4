@@ -5,4 +5,4 @@ from django import forms
 class CommentsForm(forms.ModelForm):
     class Meta:
         model = Comments
-        fields = ('name', 'email', 'body')
+        fields = ('user', 'post')

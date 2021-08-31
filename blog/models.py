@@ -25,6 +25,7 @@ class Comments(models.Model):
     comment = models.TextField(default=None, blank=True, null=True)
 
     class Meta:
+        verbose_name_plural = 'Comments'
         ordering = ['created_at']
 
     def __str__(self):
