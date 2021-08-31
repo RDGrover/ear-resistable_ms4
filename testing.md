@@ -286,3 +286,14 @@ Steps Taken:
 * Observe that there is a delete button on the right of the product image.
 * Select the delete button.
 * Observe the product being removed from the database.
+
+## Code Validators
+
+HTML Validator - 
+* Placed all HTML in the validator, although there were a few errors they do not effect the functionality of the website and so decided to leave them in. Much of the error in the code was python syntax, there is an attached sample [here](media/codevalidators/HTMLvalidatorsample.png) to illustrate. 
+
+CSS Validator - 
+* Placed Base.css in the validator and received an error about using rem for sizes. As these issues are not causing any problems and I have opted to leave them as they are [here](media/codevalidators/CSSvalidator.png) is a link to the screenshot. The other CSS files were validated without issue [here](media/codevalidators/CSSpass.png) is a link to the passed validator.
+
+JS Validator - 
+* Running the stripe_element.js through the validator returned a few warnings but no serious errors. These warnings do not effect the code so I added a missing semicolon but left the rest as it was. A link to the validator can be found [here](media/codevalidators/JSvalidator.png)
